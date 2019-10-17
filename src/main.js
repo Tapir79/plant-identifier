@@ -1,8 +1,10 @@
 import Vue from 'vue'
+import SuiVue from 'semantic-ui-vue';
 import App from './App.vue'
 import Koelista from './Koelista.vue'
 
 Vue.config.productionTip = false
+Vue.use(SuiVue);
 
 Vue.component('koelista', Koelista)
 

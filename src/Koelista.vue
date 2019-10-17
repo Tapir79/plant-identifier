@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template lang="html">
+  <div is="sui-container">
     <div key="{{totalPoints}}" class="headers">
       Pisteet:
       <br />
