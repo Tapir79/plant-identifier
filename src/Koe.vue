@@ -36,7 +36,7 @@ export default {
     },
     changeStatus(viesti) {
       if (this.status !== "Oikein") {
-        viesti.message === this.plant
+        viesti.message.toLowerCase() === this.plant
           ? ((this.status = "Oikein"), 
           (this.activeColor = "green"), 
           this.title = this.plant, 
