@@ -1,24 +1,23 @@
 <template>
   <div>
-      <section class="container">
-      <div class="one">
            <h2>{{title}}</h2>
             <input class="teksti" v-model="message" placeholder="Mikä kasvi?" />
     <button class="nappi" @click="changeStatus({message})">Arvaa</button>
     <br />
     <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"> {{status}}</div>
-      </div>
-      <div class="two">
+  
+<br>
+     
            <img :src="require(`./assets/${plant}.png`)" />
-      </div>
-      </section>  
+     
+      
     <hr />
   </div>
 </template>
 
 <script>
 export default {
-  props: ["plant"],
+  props: ["plant", "id"],
   data: function() {
     return {
       status: " ",

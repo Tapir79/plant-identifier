@@ -7,7 +7,7 @@
     </div>
     
     <div v-for="value in plants" v-bind:key="value.id">
-      <koe :plant="value" :points="totalPoints" @onePoint="totalPoints++"></koe>
+      <koe :plant="value" :id="value.id" :points="totalPoints" @onePoint="totalPoints++"></koe>
     </div>
   </div>
 
@@ -65,9 +65,11 @@ export default {
 
 <style scoped>
 .headers {
-  background: black;
+  background-color:rgba(0, 0, 0, 0.5);
   color: white;
   position: fixed;
+  right:100px;
+  top:50px;
   font-size: 40px;
 }
 </style>
