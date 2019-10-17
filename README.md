@@ -32,5 +32,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * npm install express serve-static --save
 * npm run build
 * serves /dist directory (Vue compressed production build )
-* testing: node server.js http://localhost:8080/index.html
+* testing: node server.js http://localhost:8080/
 * add start script to package.json
