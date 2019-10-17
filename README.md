@@ -1,4 +1,4 @@
-# Puulajitunnistus
+# Kasvilajitunnistus
 
 Tree species identifying app for school kids made with Vue. 
 
