@@ -31,11 +31,12 @@ export default {
       this.$store.commit("addPoints");
     },
     changeStatus(viesti) {
+      //Console.log(viesti.message)
       if (this.status !== "Oikein") {
-        viesti.message.toLowerCase() === this.plant
+        viesti.message.toLowerCase() === (this.plant.includes("0") ? this.plant.substring(0, this.plant.length-1) : this.plant)
           ? ((this.status = "Oikein"),
             (this.activeColor = "green"),
-            (this.title = this.plant),
+            (this.title = (this.plant.includes("0") ? this.plant.substring(0, this.plant.length-1) : this.plant)),
             this.$emit("onePoint"))
           : (this.status = "Koeta uudelleen");
       }
