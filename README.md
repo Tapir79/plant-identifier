@@ -26,6 +26,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # Deploy to Heroku
+* download Heroku client : https://devcenter.heroku.com/articles/heroku-cli
 * heroku login
 * heroku create puulajitunnistus
 * heroku config:set NODE_ENV=production --app puulajitunnistus
